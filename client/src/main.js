@@ -1,5 +1,4 @@
-// 全局样式导入
-import './styles/main.scss'
+import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -11,9 +10,5 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
-
-// 注册全局组件
-import gloalComponemnts from '@/components/index'
-app.use(gloalComponemnts)
 
 app.mount('#app')
